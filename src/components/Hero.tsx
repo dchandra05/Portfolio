@@ -197,7 +197,7 @@ export default function Hero() {
                   </p>
                   <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
                     <p className="text-ink font-semibold text-sm">
-                      Energy Operations Intern
+                      GM Energy Operations Intern
                     </p>
                     <p className="text-ink-muted text-xs mt-0.5">
                       General Motors · Warren, MI
