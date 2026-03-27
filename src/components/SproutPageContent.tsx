@@ -59,15 +59,15 @@ const teamMembers = [
   {
     initials: "DC",
     name: "Dustin J. Chandra",
-    role: "Founder & CEO",
+    role: "Co-Founder & CTO",
     detail: "Michigan State University · Computer Engineering",
     linkedin: DUSTIN_LINKEDIN,
   },
   {
     initials: "JA",
     name: "Jonah Alsfasser",
-    role: "Business Partner",
-    detail: "",
+    role: "Co-Founder & CEO",
+    detail: "Michigan State University · Computational Data Science",
     linkedin: JONAH_LINKEDIN,
   },
 ];
@@ -101,9 +101,9 @@ export default function SproutPageContent() {
       <section className="pt-32 pb-20 lg:pt-40 lg:pb-24">
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="max-w-3xl mb-14"
           >
             <span className="inline-block font-mono text-msu text-sm tracking-widest uppercase bg-msu-100 border border-msu-200 px-3 py-1 rounded-full mb-6">
@@ -133,9 +133,9 @@ export default function SproutPageContent() {
 
           {/* Large browser preview */}
           <motion.div
-            initial={{ opacity: 0, y: 32 }}
+            initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
+            transition={{ duration: 0.55, delay: 0.12, ease: "easeOut" }}
           >
             <a
               href={SPROUT_URL}
@@ -182,10 +182,10 @@ export default function SproutPageContent() {
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <span className="section-label">The Problem</span>
               <h2 className="text-4xl sm:text-5xl font-bold text-ink mb-6 leading-tight">
@@ -208,10 +208,10 @@ export default function SproutPageContent() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 24 }}
+              initial={{ opacity: 0, x: 14 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+              transition={{ duration: 0.5, delay: 0.08, ease: "easeOut" }}
               className="grid grid-cols-2 gap-3"
             >
               {[
@@ -271,10 +271,10 @@ export default function SproutPageContent() {
             {features.map((feature, i) => (
               <motion.div
                 key={feature.title}
-                initial={{ opacity: 0, y: 28 }}
+                initial={{ opacity: 0, y: 14 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: i * 0.07, ease: "easeOut" }}
+                transition={{ duration: 0.4, delay: i * 0.05, ease: "easeOut" }}
                 className="card p-6 hover:border-msu/25 hover:-translate-y-0.5 hover:shadow-md"
               >
                 <div className="text-2xl mb-3">{feature.icon}</div>
@@ -318,7 +318,7 @@ export default function SproutPageContent() {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
+                transition={{ duration: 0.4, delay: i * 0.06, ease: "easeOut" }}
                 className="card p-5 hover:border-msu/25 hover:shadow-md"
               >
                 <p className="section-label !text-xs !mb-3">{group.category}</p>
@@ -358,7 +358,7 @@ export default function SproutPageContent() {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
+                transition={{ duration: 0.4, delay: i * 0.07, ease: "easeOut" }}
                 className="card p-6 hover:border-msu/25 hover:shadow-md"
               >
                 <div className="w-12 h-12 rounded-xl bg-msu flex items-center justify-center text-white font-bold text-sm font-mono mb-4">

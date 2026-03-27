@@ -14,11 +14,11 @@ const container: Variants = {
 };
 
 const item: Variants = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 14 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.5, ease: "easeOut" },
   },
 };
 
@@ -136,9 +136,9 @@ export default function Hero() {
 
           {/* Right: Info card */}
           <motion.div
-            initial={{ opacity: 0, x: 40, scale: 0.97 }}
+            initial={{ opacity: 0, x: 20, scale: 0.98 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.55, ease: "easeOut" }}
+            transition={{ duration: 0.6, delay: 0.45, ease: "easeOut" }}
             className="hidden lg:block"
           >
             <div className="relative">
@@ -177,7 +177,7 @@ export default function Hero() {
                   <p className="section-label !mb-3">Currently</p>
                   <div className="space-y-3">
                     {[
-                      { role: "Founder & CEO", org: "Sprout" },
+                      { role: "Co-Founder & CTO", org: "Sprout" },
                     ].map(({ role, org }) => (
                       <div key={org} className="flex items-center gap-3">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />

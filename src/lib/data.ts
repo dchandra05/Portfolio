@@ -51,7 +51,7 @@ export const experiences: Experience[] = [
   },
   {
     id: "sprout",
-    title: "Founder & CEO",
+    title: "Co-Founder & CTO",
     company: "Sprout",
     location: "East Lansing, MI",
     period: "Jun 2025 – Present",

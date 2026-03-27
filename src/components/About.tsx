@@ -6,11 +6,11 @@ import { GraduationCap, TrendingUp, BookOpen } from "lucide-react";
 import { education } from "@/lib/data";
 
 const fadeUp = (delay = 0): Variants => ({
-  hidden: { opacity: 0, y: 28 },
+  hidden: { opacity: 0, y: 14 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay, ease: "easeOut" },
+    transition: { duration: 0.5, delay, ease: "easeOut" },
   },
 });
 
