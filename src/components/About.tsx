@@ -60,7 +60,7 @@ export default function About() {
                 <strong className="text-ink font-semibold">
                   General Motors
                 </strong>{" "}
-                as an Energy Operations Intern — bringing engineering and
+                as a GM Energy Operations Intern — bringing engineering and
                 analytical skills to one of the world&apos;s largest automotive
                 companies.
               </p>
