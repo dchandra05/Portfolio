@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Palette */
+  --color-cream: #F5F1E8;
+  --color-parchment: #EDE9E0;
+  --color-ivory: #FEFCF8;
+
+  /* MSU Green Scale */
+  --color-msu: #18453B;
+  --color-msu-600: #235E50;
+  --color-msu-700: #1a4c41;
+  --color-msu-800: #102e26;
+  --color-msu-100: #e8f0ee;
+  --color-msu-200: #c5d9d5;
+
+  /* Text Scale */
+  --color-ink: #1c1c1c;
+  --color-ink-muted: #5c5c5c;
+  --color-ink-faint: #9a9a9a;
+
+  /* Border */
+  --color-rim: #e0dbd0;
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::selection {
+    background-color: rgba(24, 69, 59, 0.18);
+    color: #18453b;
+  }
+
+  body {
+    background-color: #f5f1e8;
+    color: #1c1c1c;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply block font-mono text-msu text-sm tracking-widest uppercase mb-3;
+  }
+
+  .skill-tag {
+    @apply text-xs font-medium px-3 py-1.5 rounded-full bg-msu-100 text-msu border border-msu-200 transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-ivory rounded-2xl border border-rim shadow-sm transition-all duration-300;
+  }
+}
+
+/* Animated grid background */
+.animated-grid {
+  background-color: #f5f1e8;
+  background-image: linear-gradient(
+      to right,
+      rgba(24, 69, 59, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(24, 69, 59, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridMove 35s linear infinite;
+}
+
+@keyframes gridMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
