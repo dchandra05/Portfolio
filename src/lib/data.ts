@@ -5,7 +5,7 @@ export const personal = {
   title: "Computer Engineering Student",
   school: "Michigan State University",
   tagline:
-    "Building impactful software at the intersection of engineering, data, and entrepreneurship.",
+    "I build things I wish existed, and occasionally they turn into something real.",
   location: "East Lansing, MI",
   email: "dustin.chandra05@gmail.com",
   phone: "(248) 615-5015",
@@ -45,7 +45,7 @@ export const experiences: Experience[] = [
     period: "Summer 2026",
     status: "upcoming",
     bullets: [
-      "Incoming intern joining the Energy Operations team at GM's global headquarters.",
+      "Joining GM's business operations team at their global headquarters in Warren, MI to incorporate AI into how they sort and analyze energy data, improving on what their current processes can do.",
     ],
     skills: ["Engineering", "Energy Systems", "Operations"],
   },
@@ -57,8 +57,8 @@ export const experiences: Experience[] = [
     period: "Jun 2025 – Present",
     status: "current",
     bullets: [
-      "Developed a full-stack gamified learning platform using React, Prisma, and PostgreSQL, supporting interactive, modular learning experiences.",
-      "Built automated analytics pipelines to track user engagement and completion metrics, enabling data-driven iteration.",
+      "Co-built Sprout from scratch with a classmate, a full-stack React app with a Node/Prisma/PostgreSQL backend that is live at sproutnow.net.",
+      "Wrote the analytics pipeline that tracks user engagement and module completion so we actually know what is working and what needs to change.",
     ],
     skills: ["React", "Node.js", "Prisma", "PostgreSQL", "SupabaseAPI"],
   },
@@ -70,8 +70,8 @@ export const experiences: Experience[] = [
     period: "Nov 2025 – Mar 2026",
     status: "past",
     bullets: [
-      "Deployed AI-driven automation workflows using real e-commerce store data to streamline analysis.",
-      "Designed and built end-to-end automated pipelines integrating AI models, data sources, and dashboard outputs.",
+      "Built AI-powered automation workflows against real Wayfair e-commerce data, replacing manual analysis steps with pipelines that ran on their own.",
+      "Connected AI models, live data sources, and dashboard outputs into one end-to-end pipeline so the team could go from raw data to visible insight without any manual handoff.",
     ],
     skills: ["AI/ML", "Python", "Automation", "Data Pipelines"],
   },
@@ -83,8 +83,8 @@ export const experiences: Experience[] = [
     period: "May 2025 – Oct 2025",
     status: "past",
     bullets: [
-      "Designed and implemented an automated quote generation tool, reducing manual input errors by ~90%.",
-      "Cut end-to-end quote time from ~60 minutes to under 10 minutes — generating $450K in prospective revenue within 4 months.",
+      "Built an automated quote generation tool that cut manual input errors by roughly 90%.",
+      "Reduced end-to-end quote time from about 60 minutes to under 10, and the tool generated $450K in prospective revenue within 4 months.",
     ],
     skills: ["JavaScript", "Automation", "Full-Stack"],
   },
@@ -96,8 +96,8 @@ export const experiences: Experience[] = [
     period: "Jan 2025 – Jan 2026",
     status: "past",
     bullets: [
-      "Managed and balanced an annual budget of over $200,000.",
-      "Oversaw all financial transactions including dues collection, vendor payments, and reimbursements.",
+      "Owned the chapter's $200K+ annual budget, tracking every dollar across dues, vendor contracts, and chapter events.",
+      "Handled all financial operations for 100+ members including dues collection, reimbursements, and vendor payments with no outstanding disputes during my term.",
     ],
     skills: ["Finance", "Budget Management", "Leadership"],
   },
@@ -120,7 +120,7 @@ export const projects: Project[] = [
     title: "Sprout",
     subtitle: "Gamified Learning Platform",
     description:
-      "A full-stack gamified learning platform designed to make education engaging through interactive, modular experiences. Built automated analytics pipelines to track engagement and drive data-informed content iteration.",
+      "A gamified learning platform Jonah and I built because we kept showing up to internships and realizing nobody had taught us the tools everyone expected us to know. React frontend, Node/Prisma/PostgreSQL backend, with an analytics layer to see what users are actually doing.",
     tech: ["React", "JavaScript", "HTML", "Node.js", "Prisma", "PostgreSQL", "SupabaseAPI", "AlpacaAPI"],
     featured: true,
     github: "",
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     title: "Automated Data Pipeline",
     subtitle: "& Monitoring Dashboard",
     description:
-      "A data pipeline that ingests raw events, runs automated backend jobs, and stores results for analysis. React dashboard displays system health and metric trends in near real time.",
+      "A pipeline that pulls raw events, runs scheduled backend jobs, and stores processed results. The React dashboard shows system health and metric trends so you do not have to query the database manually.",
     tech: ["JavaScript", "Node.js", "React", "PostgreSQL", "Prisma"],
     featured: false,
     github: "",
@@ -142,7 +142,7 @@ export const projects: Project[] = [
     title: "Financial Portfolio Tracker",
     subtitle: "Education & Investing",
     description:
-      "A full-stack financial education and portfolio tracking app for investment tracking and learning core financial concepts, with a clean UI designed in Figma.",
+      "A full-stack app for tracking investment portfolios and learning personal finance basics. I designed the UI in Figma first, then built it out with a FastAPI backend and live market data through the Alpaca API.",
     tech: ["JavaScript", "FastAPI", "AlpacaAPI", "Figma"],
     featured: false,
     github: "",

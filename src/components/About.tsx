@@ -45,24 +45,28 @@ export default function About() {
             <div className="space-y-4 text-ink-muted leading-relaxed">
               <p>
                 I&apos;m a third-year Computer Engineering student at Michigan
-                State University with a 3.6 GPA and a drive to build software
-                that creates real-world impact.
+                State with a 3.6 GPA, two minors in Entrepreneurship and
+                Economics, and a habit of starting projects that turn into more
+                than I planned.
               </p>
               <p>
-                My work spans AI-powered automation pipelines to full-stack
-                entrepreneurial platforms. I&apos;m currently building{" "}
-                <strong className="text-ink font-semibold">Sprout</strong>, my
-                gamified edtech startup, while bringing engineering skills to
-                real-world problems.
+                Right now that mostly means building{" "}
+                <strong className="text-ink font-semibold">Sprout</strong> with
+                my co-founder Jonah. We started it because we kept running into
+                the same problem: school teaches theory, jobs expect tools, and
+                nothing really fills that gap. I also do a lot of automation
+                work, and my time at Dallas Industries is probably the clearest
+                example of what happens when you hand an engineer a broken
+                manual process.
               </p>
               <p>
-                This summer, I&apos;m joining{" "}
+                This summer I&apos;m joining{" "}
                 <strong className="text-ink font-semibold">
                   General Motors
                 </strong>{" "}
-                as a GM Energy Operations Intern — bringing engineering and
-                analytical skills to one of the world&apos;s largest automotive
-                companies.
+                as a GM Energy Operations Intern in Warren, bringing AI into
+                their business operations to improve how they sort and analyze
+                data.
               </p>
             </div>
 

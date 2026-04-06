@@ -19,38 +19,38 @@ const techGroups = [
 const features = [
   {
     icon: "🤖",
-    title: "AI Tool Fluency",
-    desc: "Students learn to work effectively with modern AI tools — including ChatGPT and Claude Code — turning them into real productivity multipliers.",
+    title: "AI Literacy",
+    desc: "Hands-on practice with ChatGPT, Claude, and AI coding tools. Not just knowing they exist but actually being able to use them as part of a real workflow.",
     tags: ["ChatGPT", "Claude Code", "AI Workflows"],
   },
   {
     icon: "💻",
     title: "Developer Skills",
-    desc: "Hands-on coding, version control, APIs, and the real workflows that professional developers use every day.",
+    desc: "Git, APIs, environment setup, and deployment basics. The unglamorous infrastructure that every professional developer uses before writing a single line of product code.",
     tags: ["Git", "APIs", "Dev Environments"],
   },
   {
     icon: "📊",
     title: "Financial Literacy",
-    desc: "Investing, portfolio management, and personal finance — the money skills schools almost never teach.",
+    desc: "How investing actually works, what an index fund is, how to build a budget you will stick to, and why compound interest matters more than most courses let on. The financial foundation schools consistently skip.",
     tags: ["Investing", "Budgeting", "Markets"],
   },
   {
     icon: "🎮",
     title: "Gamified Learning",
-    desc: "Progress through structured modules with milestones and achievements that keep engagement high and momentum consistent.",
+    desc: "Modules are structured with clear milestones so progress feels concrete. No 40-minute lectures, just the next step and then the one after that.",
     tags: ["Modules", "Progress Tracking"],
   },
   {
     icon: "📈",
     title: "Analytics & Insights",
-    desc: "Built-in analytics track engagement and completion metrics, driving data-informed improvements to course content.",
+    desc: "I built the analytics layer myself so we can see exactly where students drop off and which modules are worth keeping. We iterate on content the same way you would iterate on a product.",
     tags: ["Engagement Data", "Iteration"],
   },
   {
     icon: "🔧",
     title: "Practical Projects",
-    desc: "Every module ends in a real project — not a quiz. Students leave with work they can show and skills they can use.",
+    desc: "Each module ends with something you actually built, not a multiple-choice quiz. The goal is a portfolio of real work, not a certificate.",
     tags: ["Portfolio-Ready", "Hands-On"],
   },
 ];
@@ -116,9 +116,10 @@ export default function SproutPageContent() {
               Gamified Learning Platform
             </p>
             <p className="text-lg text-ink-muted leading-relaxed mb-8 max-w-2xl">
-              Bridging the gap between classroom education and the practical
-              skills students actually need — from AI fluency to real developer
-              workflows — in an engaging, gamified format.
+              Jonah and I built Sprout because we kept showing up to internships
+              and realizing nobody had taught us the tools everyone expected us
+              to know. AI workflows, version control, how money actually works,
+              the stuff that matters on day one.
             </p>
             <a
               href={SPROUT_URL}
@@ -195,14 +196,17 @@ export default function SproutPageContent() {
               </h2>
               <div className="space-y-4 text-ink-muted leading-relaxed">
                 <p>
-                  Students graduate with theoretical knowledge but little experience
-                  using the tools that define modern work. The AI revolution is
-                  reshaping every industry, yet most curricula haven&apos;t caught up.
+                  I noticed it my first week at Dallas Industries. I had four
+                  semesters of CS theory and zero experience with the tools my
+                  team used every day. Git workflows, API integrations,
+                  AI-assisted development, none of it was in the syllabus.
                 </p>
                 <p>
-                  The result: graduates who know the textbook but are unprepared for
-                  the tools, workflows, and expectations they&apos;ll face on day one
-                  of any modern job.
+                  Jonah had the same experience on the finance and business
+                  side. Nobody taught him how to read a brokerage account or
+                  manage a real budget until he had to figure it out himself.
+                  So instead of waiting for a curriculum to catch up, we built
+                  what we wished had existed.
                 </p>
               </div>
             </motion.div>
@@ -216,20 +220,20 @@ export default function SproutPageContent() {
             >
               {[
                 {
-                  title: "No AI fluency",
-                  desc: "Students graduate without knowing how to effectively use AI tools that now dominate every workplace.",
+                  title: "No AI literacy",
+                  desc: "Most programs still treat AI as optional. By graduation, peers who figured it out on their own are already ahead.",
                 },
                 {
                   title: "Missing workflows",
-                  desc: "Real developer and professional workflows aren't taught — version control, APIs, deployment.",
+                  desc: "Version control, API integrations, deployment. The daily infrastructure of any dev job that is rarely taught but immediately expected.",
                 },
                 {
                   title: "Theory-heavy",
-                  desc: "Heavy focus on theory with minimal hands-on, practical application of what's actually used.",
+                  desc: "Four years of coursework can leave you great at explaining algorithms and completely lost when someone asks you to ship something.",
                 },
                 {
-                  title: "Day-one gap",
-                  desc: "Employers consistently report that graduates lack the job-ready skills needed from day one.",
+                  title: "Financial blind spots",
+                  desc: "Investing, budgeting, understanding a paycheck. Most students leave college without ever being taught the basics of personal finance.",
                 },
               ].map(({ title, desc }) => (
                 <div
@@ -261,9 +265,10 @@ export default function SproutPageContent() {
               <span className="text-msu">actually matters.</span>
             </h2>
             <p className="text-ink-muted leading-relaxed text-lg">
-              Sprout delivers interactive, gamified modules covering the practical
-              skills traditional education skips — from modern AI tools to real
-              developer workflows.
+              Sprout covers the skills that do not make it into most syllabi.
+              How to actually use AI tools, how professional dev workflows run,
+              and how to manage your own money. Structured modules, real
+              projects, and enough gamification to make it worth finishing.
             </p>
           </motion.div>
 
@@ -399,8 +404,8 @@ export default function SproutPageContent() {
               See it for yourself.
             </h2>
             <p className="text-msu-200/80 max-w-md mx-auto mb-8 leading-relaxed">
-              Sprout is live and actively being developed. Check out the platform
-              and see what we&apos;re building.
+              Sprout is live. We&apos;re still building, adding modules, improving
+              the analytics, expanding the content. Come see where it is right now.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
