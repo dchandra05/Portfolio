@@ -5,7 +5,7 @@ export const personal = {
   title: "Computer Engineering Student",
   school: "Michigan State University",
   tagline:
-    "I build things I wish existed, and occasionally they turn into something real.",
+    "I design and build software and hardware solutions, applying engineering knowledge and leveraging AI to solve real problems.",
   location: "East Lansing, MI",
   email: "dustin.chandra05@gmail.com",
   phone: "(248) 615-5015",
@@ -45,9 +45,9 @@ export const experiences: Experience[] = [
     period: "Summer 2026",
     status: "upcoming",
     bullets: [
-      "Joining GM's business operations team at their global headquarters in Warren, MI to incorporate AI into how they sort and analyze energy data, improving on what their current processes can do.",
+      "Joining GM's public charging and home energy systems team at their global headquarters in Warren, MI to incorporate AI into how they sort and analyze energy data, improving on what their current processes can do.",
     ],
-    skills: ["Engineering", "Energy Systems", "Operations"],
+    skills: ["Automation", "Data Analytics", "AI"],
   },
   {
     id: "sprout",
@@ -76,17 +76,31 @@ export const experiences: Experience[] = [
     skills: ["AI/ML", "Python", "Automation", "Data Pipelines"],
   },
   {
-    id: "dallas",
+    id: "dallas-sw",
     title: "Software Engineering Intern",
     company: "Dallas Industries",
     location: "Troy, MI",
-    period: "May 2025 – Oct 2025",
+    period: "Aug 2025 – Oct 2025",
     status: "past",
     bullets: [
       "Built an automated quote generation tool that cut manual input errors by roughly 90%.",
       "Reduced end-to-end quote time from about 60 minutes to under 10, and the tool generated $450K in prospective revenue within 4 months.",
     ],
-    skills: ["JavaScript", "Automation", "Full-Stack"],
+    skills: ["Excel", "Microsoft VBA", "Python", "Automation"],
+  },
+  {
+    id: "dallas-ee",
+    title: "Electrical Engineering Intern",
+    company: "Dallas Industries",
+    location: "Troy, MI",
+    period: "May 2025 – Jul 2025",
+    status: "past",
+    bullets: [
+      "Designed and built electrical control panels to client specs, ensuring compliance with NEC (NFPA 70) and UL 508A standards.",
+      "Worked on metal coil feeders, straighteners, and other automated manufacturing equipment.",
+      "Gained hands-on experience with PLCs, sensors, and industrial control systems to improve automation and system performance.",
+    ],
+    skills: ["Electrical Design", "PLCs", "NEC Standards", "Industrial Automation"],
   },
   {
     id: "alpha-sigma-phi",
@@ -150,30 +164,61 @@ export const projects: Project[] = [
   },
 ];
 
+export type SkillLevel = "excel" | "proficient" | "intermediate";
+
+export interface Skill {
+  name: string;
+  level: SkillLevel;
+}
+
 export const skillCategories = [
   {
     label: "Languages",
     icon: "Code2",
-    skills: ["JavaScript", "TypeScript", "Python", "C++"],
+    skills: [
+      { name: "C++", level: "excel" },
+      { name: "JavaScript", level: "proficient" },
+      { name: "Python", level: "proficient" },
+      { name: "TypeScript", level: "intermediate" },
+    ] as Skill[],
   },
   {
     label: "Frontend",
     icon: "Layout",
-    skills: ["React", "Next.js", "Tailwind CSS", "Figma"],
+    skills: [
+      { name: "Figma", level: "excel" },
+      { name: "React", level: "proficient" },
+      { name: "Next.js", level: "intermediate" },
+      { name: "Tailwind CSS", level: "intermediate" },
+    ] as Skill[],
   },
   {
     label: "Backend",
     icon: "Server",
-    skills: ["Node.js", "FastAPI", "PostgreSQL", "Prisma"],
+    skills: [
+      { name: "Node.js", level: "proficient" },
+      { name: "SQL", level: "proficient" },
+      { name: "FastAPI", level: "intermediate" },
+      { name: "Prisma", level: "intermediate" },
+    ] as Skill[],
   },
   {
     label: "Cloud & Data",
     icon: "Cloud",
-    skills: ["AWS", "Google Cloud", "Power BI"],
+    skills: [
+      { name: "Power BI", level: "excel" },
+      { name: "AWS", level: "intermediate" },
+      { name: "Google Cloud", level: "intermediate" },
+    ] as Skill[],
   },
   {
     label: "Concepts",
     icon: "BookOpen",
-    skills: ["Data Structures", "AI / ML", "Cybersecurity", "Computer Architecture"],
+    skills: [
+      { name: "AI / ML", level: "excel" },
+      { name: "Data Structures", level: "proficient" },
+      { name: "Cybersecurity", level: "proficient" },
+      { name: "Computer Architecture", level: "intermediate" },
+    ] as Skill[],
   },
 ];

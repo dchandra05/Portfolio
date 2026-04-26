@@ -46,18 +46,20 @@ export default function About() {
               <p>
                 I&apos;m a third-year Computer Engineering student at Michigan
                 State with a 3.6 GPA, two minors in Entrepreneurship and
-                Economics, and a habit of starting projects that turn into more
-                than I planned.
+                Economics, and I am fortunate enough to turn some of my projects into
+                something real.
               </p>
               <p>
                 Right now that mostly means building{" "}
                 <strong className="text-ink font-semibold">Sprout</strong> with
                 my co-founder Jonah. We started it because we kept running into
                 the same problem: school teaches theory, jobs expect tools, and
-                nothing really fills that gap. I also do a lot of automation
-                work, and my time at Dallas Industries is probably the clearest
-                example of what happens when you hand an engineer a broken
-                manual process.
+                personal finance is barely mentioned. Sprout covers all of it,
+                developer workflows, AI literacy, and the financial skills that
+                set students up for a strong future. I also do a lot of
+                automation work, and my time at Dallas Industries is probably
+                the clearest example of what happens when you hand an engineer
+                a broken manual process.
               </p>
               <p>
                 This summer I&apos;m joining{" "}
