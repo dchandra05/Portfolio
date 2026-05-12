@@ -83,7 +83,7 @@ export default function Projects() {
   const rest = projects.filter((p) => !p.featured);
 
   return (
-    <section id="projects" className="py-20 lg:py-28 bg-white border-y border-rim">
+    <section id="projects" className="py-20 lg:py-28 bg-white/90 border-y border-rim">
       <div className="max-w-6xl mx-auto px-5 sm:px-8" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 14 }}

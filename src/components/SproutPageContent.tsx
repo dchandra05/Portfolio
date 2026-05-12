@@ -179,7 +179,7 @@ export default function SproutPageContent() {
       </section>
 
       {/* The Problem */}
-      <section className="py-20 lg:py-28 bg-white border-y border-rim">
+      <section className="py-20 lg:py-28 bg-white/90 border-y border-rim">
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
             <motion.div
@@ -301,7 +301,7 @@ export default function SproutPageContent() {
       </section>
 
       {/* Tech Stack */}
-      <section className="py-20 lg:py-28 bg-white border-y border-rim">
+      <section className="py-20 lg:py-28 bg-white/90 border-y border-rim">
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <motion.div
             initial={{ opacity: 0, y: 24 }}

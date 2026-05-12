@@ -26,7 +26,7 @@ export default function About() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="about" className="py-20 lg:py-28 bg-white border-y border-rim">
+    <section id="about" className="py-20 lg:py-28 bg-white/90 border-y border-rim">
       <div className="max-w-6xl mx-auto px-5 sm:px-8" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
           {/* Left: Bio */}
@@ -57,9 +57,9 @@ export default function About() {
                 personal finance is barely mentioned. Sprout covers all of it,
                 developer workflows, AI literacy, and the financial skills that
                 set students up for a strong future. I also do a lot of
-                automation work, and my time at Dallas Industries is probably
-                the clearest example of what happens when you hand an engineer
-                a broken manual process.
+                automation work, and my time at Dallas showcases this through
+                business process automation. My quoting tool is a perfect
+                example of automation replacing a manual process.
               </p>
               <p>
                 This summer I&apos;m joining{" "}
@@ -131,18 +131,22 @@ export default function About() {
               </div>
             </div>
 
-            {/* Club */}
-            <div className="card p-4 flex items-center gap-3 hover:border-msu/25">
-              <div className="w-9 h-9 rounded-lg bg-msu-100 border border-msu-200 flex items-center justify-center flex-shrink-0">
-                <span className="text-msu text-xs font-bold font-mono">AI</span>
+            {/* Clubs */}
+            {[
+              { abbr: "AI",  name: "MSU AI Club",                       sub: "Member · AI/ML research and applications" },
+              { abbr: "EA",  name: "MSU Entrepreneurship Association",   sub: "Member · Startup ecosystem and founder community" },
+              { abbr: "IS",  name: "Imagine Software Club",              sub: "Member · Software development and project building" },
+            ].map(({ abbr, name, sub }) => (
+              <div key={name} className="card p-4 flex items-center gap-3 hover:border-msu/25">
+                <div className="w-9 h-9 rounded-lg bg-msu-100 border border-msu-200 flex items-center justify-center flex-shrink-0">
+                  <span className="text-msu text-xs font-bold font-mono">{abbr}</span>
+                </div>
+                <div>
+                  <p className="text-ink text-sm font-semibold">{name}</p>
+                  <p className="text-ink-faint text-xs">{sub}</p>
+                </div>
               </div>
-              <div>
-                <p className="text-ink text-sm font-semibold">MSU AI Club</p>
-                <p className="text-ink-faint text-xs">
-                  Member · Exploring AI/ML research &amp; applications
-                </p>
-              </div>
-            </div>
+            ))}
           </motion.div>
         </div>
       </div>

@@ -28,9 +28,6 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden"
     >
-      {/* Animated grid */}
-      <div className="absolute inset-0 animated-grid" />
-
       {/* Floating gradient blobs */}
       <div
         className="absolute -top-32 -right-32 w-[700px] h-[700px] rounded-full pointer-events-none"

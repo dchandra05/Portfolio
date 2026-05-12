@@ -43,6 +43,14 @@
 
   body {
     background-color: #f5f1e8;
+    background-image: linear-gradient(
+        to right,
+        rgba(24, 69, 59, 0.06) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(24, 69, 59, 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: gridMove 35s linear infinite;
     color: #1c1c1c;
     -webkit-font-smoothing: antialiased;
   }
@@ -62,17 +70,9 @@
   }
 }
 
-/* Animated grid background */
+/* Retained for any explicit use */
 .animated-grid {
-  background-color: #f5f1e8;
-  background-image: linear-gradient(
-      to right,
-      rgba(24, 69, 59, 0.06) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(24, 69, 59, 0.06) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: gridMove 35s linear infinite;
+  background-color: transparent;
 }
 
 @keyframes gridMove {
